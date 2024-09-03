@@ -8,7 +8,7 @@ void main()
     int a, b, c, d;
     int sum, difference, product;
     float qoutient;
-
+    
    printf("**************\n");
    printf("* MAIN MENU *\n");
    printf("* 1.Addition *\n");
@@ -37,8 +37,6 @@ void main()
             sum = a + b;
 
             printf("the sum of %d and %d is %d", a, b, sum);
-            getch();
-            printf("\nWould you like to continue?[y/n]:");
             getch();
              break;
         {
@@ -86,7 +84,7 @@ void main()
             {
              case 4:
             system("cls");
-            printf("welcome to Dvision\n\n");
+            printf("welcome to Division\n\n");
 
             printf("enter value for a: ");
             scanf("%d", &a);
@@ -101,6 +99,12 @@ void main()
             getch();
             }else{
                 printf("error: division by zero is not allowed\n");
+                printf("enter value for b: ");
+                scanf("%d", &b);
+
+                qoutient = (float)a / b ;
+
+                printf("the qoutient of %d, and %d, is %.2f\n", a, b,qoutient);
                 getch();
             }
            
